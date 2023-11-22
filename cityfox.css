@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#landingbackground{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(29, 29, 29, 0.162), rgba(29, 29, 29, 0.235),rgba(29, 29, 29, 0.002)), url(Rectangle\ 1.png);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+body nav{
+   display: flex;
+   justify-content: space-between;
+   padding: 30px 20px 0px 20px;
+   align-items: center;
+}
+#img{
+     height: 50px;
+}
+#menuholder{
+    display: flex;
+    gap: 60px;
+
+    #namenu{
+        border: none;
+        font-size: 18px;
+        color: white;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    #namenu:hover{
+        color: #F2BFD1;        
+    }
+    
+    #getstart{
+        background-color: #F2BFD1;
+        color:white;
+        border:none;
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+        position: relative;
+        border-radius: 10px;
+        border: none;
+        font-size: 16px;
+        font-size: 18px;
+     }
+     #getstart::before{
+         content: "";
+         background-color:white;
+         position: absolute;
+         height: 100%;
+         top: 0;
+         width: 0;
+         left: 0;
+         border-radius: 10px;
+         border: none;
+         transition: all 3s ease;
+         color: white;
+         z-index: -1;
+         font-size: 18px;
+     }
+     
+     #getstart:hover::before{
+         width: 100%;
+     }
+     #getstart:hover{
+         color: black;
+         font-weight: 500;
+         z-index: 1;
+         border: none;
+     }
+}
+
+ #realestate{
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 80px;
+    width: 700px;
+    height: fit-content;
+    margin-top: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 100px;
+    transition: 2s ease-in-out;
+    cursor:none;
+ }
+ #realestate:hover{
+    color: #F2BFD1;        
+ }
+ #westrive{
+    font-size: 26px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    width: 700px;
+    word-spacing: 5;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 30px;
+    transition: 2s ease-in-out;
+    cursor:none;
+ }
+ #westrive:hover{
+    color: #F2BFD1;        
+ }
+
+#serviceholder{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 80px 0px 80px;
+    align-items: center;
+
+    #serviceoptions{
+        display: flex;
+        justify-content: space-around;
+        gap: 200px;
+    
+        #namenu{
+            border: none;
+            font-size: 24px;
+            color: white;
+            background-color: transparent;
+            cursor: pointer;
+            transition: 2s ease-out;
+        }
+        #namenu:hover{
+            color: #F2BFD1;        
+        }
+    }
+
+    #search{
+        background-color: white;
+        width: fit-content;
+        height: 45px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+       justify-content: center;
+       border-radius: 20px;
+
+       #input{
+         width:200px ;
+        margin-left: 10px;
+        height: 40px;
+        border: none;
+        outline: none;
+     }
+    }
+}
+
+#spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 300px;
+    left: 600px;
+    display: none;
+  }
+  
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  #h3 {
+    color: #F2BFD1;
+  }
+  
+  #ring {
+    width: 190px;
+    height: 190px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  #ring:nth-child(1) {
+    border-bottom: 8px solid rgb(255, 141, 249);
+    animation: rotate1 2s linear infinite;
+  }
+  
+  @keyframes rotate1 {
+    from {
+      transform: rotateX(50deg) rotateZ(110deg);
+    }
+  
+    to {
+      transform: rotateX(50deg) rotateZ(470deg);
+    }
+  }
+  
+  #ring:nth-child(2) {
+    border-bottom: 8px solid rgb(255,65,106);
+    animation: rotate2 2s linear infinite;
+  }
+  
+  @keyframes rotate2 {
+    from {
+      transform: rotateX(20deg) rotateY(50deg) rotateZ(20deg);
+    }
+  
+    to {
+      transform: rotateX(20deg) rotateY(50deg) rotateZ(380deg);
+    }
+  }
+  
+  #ring:nth-child(3) {
+    border-bottom: 8px solid rgb(0,255,255);
+    animation: rotate3 2s linear infinite;
+  }
+  
+  @keyframes rotate3 {
+    from {
+      transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);
+    }
+  
+    to {
+      transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);
+    }
+  }
+  
+  #ring:nth-child(4) {
+    border-bottom: 8px solid rgb(252, 183, 55);
+    animation: rotate4 2s linear infinite;
+  }
+  
+  @keyframes rotate4 {
+    from {
+      transform: rotateX(70deg) rotateZ(270deg);
+    }
+  
+    to {
+      transform: rotateX(70deg) rotateZ(630deg);
+    }
+  }
+
